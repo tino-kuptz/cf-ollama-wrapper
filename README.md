@@ -1,12 +1,7 @@
-# cf-ollama-wrapper
-
 > [!CAUTION]
-> Ollama does not support authentication, so this COULD be abused. I can't be taken responsible in case high billing occures.  
-> To reduce the likelihood of this happening, two options should be used:  
-> * all API requests should be used with a path prefix, 
-> * and the API should be restricted to specific IP addresses.
-> 
-> See **Security notes** below for more information.
+> Ollama does not support authentication, so this COULD be abused. I can't be taken responsible in case high billing occures.
+
+# cf-ollama-wrapper
 
 Ollama-compatible API on Cloudflare Workers.
 
