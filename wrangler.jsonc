@@ -1,0 +1,13 @@
+{
+  "name": "cf-ollama-wrapper",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-02-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // Workers AI: https://developers.cloudflare.com/workers-ai/
+  "ai": { "binding": "AI" },
+
+  "observability": {
+    "logs": { "enabled": true, "invocation_logs": true }
+  }
+}

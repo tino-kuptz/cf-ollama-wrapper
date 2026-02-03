@@ -1,0 +1,36 @@
+{
+    "name": "cf-ollama-wrapper",
+    "version": "0.1.0",
+    "description": "Ollama-compatible API on Cloudflare Workers.",
+    "author": "Tino Kuptz",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tino-kuptz/cf-ollama-wrapper"
+    },
+    "homepage": "https://github.com/tino-kuptz/cf-ollama-wrapper",
+    "keywords": ["cloudflare", "workers", "cloudflare workers", "ollama"],
+    "scripts": {
+        "dev": "wrangler dev",
+        "deploy": "wrangler deploy",
+        "cf-typegen": "wrangler types"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "^4.20241127.0",
+        "typescript": "^5.7.2",
+        "wrangler": "^4.61.1"
+    },
+    "dependencies": {
+        "hono": "^4.6.12"
+    },
+    "cloudflare": {
+        "bindings": {
+            "path_prefix": {
+                "description": "Path prefix for the API. Needs to be at least 17 characters long (`/` + 16 characters), e.g. `/1234567890123456`."
+            },
+            "allowed_ips": {
+                "description": "Allowed IPs for the API. Comma-separated list of IPs, e.g. `89.88.87.86,78.77.76.75`. Empty for all, but that is *not recommended*."
+            }
+        }
+    }
+}
