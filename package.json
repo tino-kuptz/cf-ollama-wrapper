@@ -21,7 +21,7 @@
         "wrangler": "^4.61.1"
     },
     "dependencies": {
-        "hono": "^4.6.12"
+        "hono": "^4.11.10"
     },
     "cloudflare": {
         "bindings": {
