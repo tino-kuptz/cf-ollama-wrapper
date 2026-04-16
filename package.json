@@ -18,10 +18,10 @@
     "devDependencies": {
         "@cloudflare/workers-types": "^4.20241127.0",
         "typescript": "^5.7.2",
-        "wrangler": "^4.61.1"
+        "wrangler": "^4.83.0"
     },
     "dependencies": {
-        "hono": "^4.6.12"
+        "hono": "^4.12.14"
     },
     "cloudflare": {
         "bindings": {
